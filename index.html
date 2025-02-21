@@ -56,6 +56,7 @@
             margin-top: 10px;
             font-size: 1em;
             color: #555;
+            text-align: center;
         }
         .email {
             margin-top: 5px;
@@ -67,6 +68,10 @@
             text-decoration: underline;
         }
         @media(min-width: 450px) {
+            html, body {
+                justify-content: flex-start;
+                padding-left: 10%; 
+            }
             .container {
                 flex-direction: row; 
                 align-items: flex-start; 
@@ -79,6 +84,9 @@
             }
             .content {
                 align-items: flex-start;
+            }
+            .bio {
+                text-align: left; 
             }
         }
     </style>
